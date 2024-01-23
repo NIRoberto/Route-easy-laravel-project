@@ -30,7 +30,6 @@ class TextInput extends Component
         $this->readonly = $readonly;
     }
 
-    
     public function render(): View|Closure|string
     {
         return view('components.text-input');

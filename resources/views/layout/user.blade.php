@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>Document</title>
+
+    {{--   image in the title  --}}
+    <link rel="icon" href="https://res.cloudinary.com/nrob/image/upload/v1706029688/tip%20top%20consultancy/j1qkgxldsxmplycjqcfw.png">
+    <title>Route Ease |  ticket system</title>
 </head>
 <body>
     <!-- Navigation -->

@@ -26,9 +26,6 @@ class Textarea extends Component
         $this->disabled = $disabled;
         $this->readonly = $readonly;
     }
-
-    
-
     /**
      * Get the view / contents that represent the component.
      */

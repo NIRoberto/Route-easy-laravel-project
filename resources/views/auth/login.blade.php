@@ -7,10 +7,6 @@
     <!-- Left Section - Login Form -->
     <div class="w-full  md:w-1/2 p-8">
         
-        {{-- <a href="/" class="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline">Back to Home</a> --}}
-        {{--  back to home Button --}}
-
-
         
         <h1 class="text-4xl font-bold mb-6">Welcome Back!</h1>
 

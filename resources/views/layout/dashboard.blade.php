@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
     <title>Dashboard</title>
 </head>
-<body class="font-sans bg-gray-100 flex">
+<body class="font-sans bg-gray-100 flex overflow-hidden">
         <div
-      class= "py-10 h-screen flex flex-col border border-r-1 bg-white relative w-16 md:w-64"
+      class= "py-10 h-screen  flex flex-col border border-r-1 bg-white relative w-16 md:w-64"
     >
       <div
         class="cursor-pointer bg-red-900 text-white absolute -right-3 top-10 rounded-full w-6 h-6 bg-[#FF8C8C] flex justify-center items-center"
@@ -22,21 +22,19 @@
         <span class="font-bold">Agency admin</span>
       </div>
  
-  <x-sidebar :links="[
-    ['text' => 'Dashboard', 'icon' => 'fas fa-home'],
-    ['text' => 'Users', 'icon' => 'fas fa-users'],
-    ['text' => 'Tickets', 'icon' => 'fas fa-ticket-alt'],
-    ['text' => 'Bookings', 'icon' => 'fas fa-bookmark'],
-    ['text' => 'Routes', 'icon' => 'fas fa-route'],
-    ['text' => 'Payments', 'icon' => 'fas fa-money-check-alt'],
-    ['text' => 'Reports', 'icon' => 'fas fa-chart-line'],
-    ['text' => 'Contact Us', 'icon' => 'fas fa-envelope'],
-    ['text' => 'Settings', 'icon' => 'fas fa-cog'],
-    ['text' => 'Logout', 'icon' => 'fas fa-sign-out-alt'],
+        <x-sidebar :links="[
+        ['text' => 'dashboard', 'icon' => 'fas fa-home'],
+    ['text' => 'users', 'icon' => 'fas fa-users'],
+    ['text' => 'tickets', 'icon' => 'fas fa-ticket-alt'],
+    ['text' => 'routes', 'icon' => 'fas fa-route'],
+    ['text' => 'reports', 'icon' => 'fas fa-chart-line'],
+    ['text' => 'contact', 'icon' => 'fas fa-envelope'],
+    ['text' => 'settings', 'icon' => 'fas fa-cog'],
+    ['text' => 'logout', 'icon' => 'fas fa-sign-out-alt'],
 ]" />
       </div>
     </div> 
-        <main class="flex w-full border
+        <main class="flex w-full border max-h-screen overflow-y-auto bg-gray-100
         ">
         @yield('content')
         </main>

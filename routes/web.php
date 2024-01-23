@@ -64,30 +64,43 @@ Route::get("/contact",function(){
         'title' => 'Contact'
     ]);
 });
-
-
-Route::get("/dashboard",function(){
+Route::get("/dashboard/dashboard",function(){
     return view('dashboard.dashboard-home',[
         'title' => 'Dashboard'
     ]);
 });
-
 Route::get("/dashboard/users",function(){
-    return view('dashboard.dashboard-home',[
-        'title' => 'Dashboard'
-    ]);
-});
-Route::get("/dashboard/route",function(){
     return view('dashboard.dashboard-users',[
         'title' => 'Dashboard'
     ]);
 });
-
-Route::get("/dashboard/route",function(){
-    return view('dashboard.dashboard-home',[
-        'title' => 'Dashboard'
+Route::get("/dashboard/routes",function(){
+    return view('dashboard.dashboard-routes',[
+        'title' => 'Routes'
     ]);
 });
+Route::get("/dashboard/directions",function(){
+    return view('dashboard.dashboard-direction',[
+        'title' => 'Directions'
+    ]);
+});
+Route::get("/dashboard/reports",function(){
+    return view('dashboard.dashboard-reports',[
+        'title' => 'Report'
+    ]);
+});
+Route::get("/dashboard/tickets",function(){
+    return view('dashboard.dashboard-tickets',[
+        'title' => 'Tickets'
+    ]);
+});
+Route::get("/dashboard/contact",function(){
+    return view('dashboard.dashboard-contact',[
+        'title' => 'Contact'
+    ]);
+});
+
+
 
 
 
