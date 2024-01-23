@@ -20,13 +20,13 @@
             <a href="#" class="text-lg font-semibold">My Logo</a>
         </div>
 
-        <!-- Navigation Links -->
-        <div class="space-x-4">
-            <a href="/" class="text-gray-800  hover:text-gray-300">Home</a>
-            <a href="/ticket" class="text-gray-800 hover:text-gray-300">Tickets</a>
-            <a href="/travel" class="text-gray-800 hover:text-gray-300">Travel</a>
-            <a href="/contact" class="text-gray-800 hover:text-gray-300">Contact Us</a>
-        </div>
+  <!-- Navigation Links -->
+<div class="space-x-4">
+    <a href="/" class="text-gray-800 {{ request()->is('/') ? 'font-bold text-orange-600' : '' }} hover:text-orange-700">Home</a>
+    <a href="/ticket" class="text-gray-800 {{ request()->is('ticket*') ? 'font-bold text-orange-600' : '' }} hover:text-orange-700">Tickets</a>
+    <a href="/travel" class="text-gray-800 {{ request()->is('travel*') ? 'font-bold text-orange-600' : '' }} hover:text-orange-700">Travel</a>
+    <a href="/contact" class="text-gray-800 {{ request()->is('contact*') ? 'font-bold text-orange-600' : '' }} hover:text-orange-700">Contact Us</a>
+</div>
 
         <!-- Authentication Button -->
         <div class="flex gap-4">

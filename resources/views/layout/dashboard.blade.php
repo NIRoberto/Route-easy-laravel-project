@@ -17,10 +17,12 @@
       >
           <i class="fa-solid fa-angle-left"></i>
       </div>
-      <div class="logo-div   flex space-x-4 items-center">
-        <img src="https://media.istockphoto.com/id/1446660540/de/vektor/bus-logo-design-vektor-reisebus-logo.jpg?s=1024x1024&w=is&k=20&c=9lLaMTLHrakxcmxI3FE2XHZnw7LYSL2Uvz5FA-vu3kQ=" class="w-16" />
-        <span class="font-bold">Agency admin</span>
-      </div>
+      <a href="/">
+        <div class="logo-div   flex space-x-4 items-center">
+          <img src="https://media.istockphoto.com/id/1446660540/de/vektor/bus-logo-design-vektor-reisebus-logo.jpg?s=1024x1024&w=is&k=20&c=9lLaMTLHrakxcmxI3FE2XHZnw7LYSL2Uvz5FA-vu3kQ=" class="w-16" />
+          <span class="font-bold">Agency admin</span>
+        </div>
+      </a>
  
         <x-sidebar :links="[
         ['text' => 'dashboard', 'icon' => 'fas fa-home'],
