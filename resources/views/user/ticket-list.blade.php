@@ -67,25 +67,20 @@
                         <img src="{{ $ticket['travel_agency']['image'] }}" alt="{{ $ticket['travel_agency']['name'] }}" class="rounded-full h-16 w-16 mx-auto mb-2">
                         <h2 class="text-xl font-semibold text-center">{{ $ticket['travel_agency']['name'] }}</h2>
                     </div>
-
                     <p class="text- mb-2">Seat: {{ $ticket['seat'] }}</p>
-
                     <div class="mb-2">
                         <span class="font-semibold">Direction:</span>
                         <span>{{ $ticket['direction']['origin'] }} to {{ $ticket['direction']['destination'] }}</span>
                     </div>
-
                     <div class="mb-2">
                         <span class="font-semibold">Price:</span>
                         <span>{{ $ticket['direction']['price'] }}</span>
                     </div>
-
                     <div class="mb-2">
                         <span class="font-semibold">Time:</span>
                         <span>{{ $ticket['time'] }}</span>
                     </div>
-
-                    <button class="bg-orange-700 hover:orange-900 text-white px-4 py-2 rounded-md">Book Now</button>
+                    <button class="bg-orange-600 hover:bg-orange-800 text-white px-4 py-2 rounded-md">Book Now</button>
                 </div>
             @endforeach
         </div>

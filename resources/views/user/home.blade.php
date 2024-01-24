@@ -115,8 +115,9 @@
                         <span class="font-semibold">Time:</span>
                         <span>{{ $ticket['time'] }}</span>
                     </div>
-
-                    <button class="bg-orange-600 text-white px-4 py-2 rounded-md">Book Now</button>
+                    <a href="/ticket">
+                        <button class="bg-orange-600 text-white px-4 py-2 rounded-md">Book Now</button>
+                    </a>
                 </div>
             @endforeach
         </div>
