@@ -13,43 +13,33 @@
             foreach ($hours as $hour) {
                 $time = sprintf("2024-01-24 %02d:00:00", $hour);
                 $generatedRoutes[] = [
-                    'agency' => 'Amazing Travels',
+                    'agency' => 'Ritco Express',
                     'origin' => 'Kigali',
                     'destination' => 'Gisenyi',
-                    'price' => '50,000 RWF',
+                    'price' => '2560 RWF',
                     'departure_time' => $time,
                 ];
             }
         @endphp
     <div class="flex flex-col gap-8 p-8">
     <div class="flex justify-between items-center mb-4">
-        <h1 class="text-2xl">Add New Route</h1>
+        <h1 class="text-2xl font-bold">Add New Route</h1>
     </div>
 
-    <div
-        class="
-             flex   gap-8
-        "
-    >
-
-    <!-- Add Route Form -->
+    <div class="flex   gap-8">
     <form action="" method="post" class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md  h-screen ">
         @csrf
-        <h1
-            class="
-                text-2xl
-                font-semibold
-                mb-4
-            "
-        >
-              Fill the form to add Route
-        </h1>
+        <h1  class="text-2xl font-semibold mb-4">Fill the form to add Route</h1>
         <div class="mb-4">
             <label for="agency" class="block text-sm font-medium text-gray-600">Travel Agency:</label>
             <select id="agency" name="agency" class="mt-1 p-2 border rounded-md w-full">
-                <option value="Rwanda Explorers">Rwanda Explorers</option>
-                <option value="Serene Tours">Serene Tours</option>
-                <option value="Discover Rwanda">Discover Rwanda</option>
+                <option value="Rwanda Explorers">
+                    Ritco Express
+                </option>
+                <option value="Serene Tours">
+                    Volcano Express
+                </option>
+                <option value="Discover Rwanda">Horizon express</option>
                 <!-- Add more agencies as needed -->
             </select>
         </div>
@@ -78,11 +68,11 @@
             </div>
         </div>
 
-        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Add Route</button>
+        <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md">Add Route</button>
     </form>
 
       <div class="">
-        <h2 class="text-xl font-semibold mb-4">Generated Routes</h2>
+        <h2 class="text-xl font-semibold mb-4">Current Routes Routes</h2>
  
 
         <ul

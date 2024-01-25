@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
     {{--   image in the title  --}}
     <link rel="icon" href="https://res.cloudinary.com/nrob/image/upload/v1706029688/tip%20top%20consultancy/j1qkgxldsxmplycjqcfw.png">
     <title>Route Ease |  ticket system</title>

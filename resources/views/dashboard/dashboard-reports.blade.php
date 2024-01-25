@@ -8,7 +8,7 @@
 
     <div class="mb-4">
         <h1 class="text-2xl my-8 font-bold">Booking Report</h1>
-        <a href="" class="bg-gray-500 text-white px-4 py-2 rounded-md">View Routes</a>
+        <a href="" class="bg-green-500 text-white px-4 py-2 rounded-md">View Routes</a>
     </div>
 
     <!-- Display Booking Report -->

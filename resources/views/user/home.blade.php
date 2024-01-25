@@ -16,12 +16,9 @@
                 <input type="text" placeholder="From" class="border p-2">
                 <input type="text" placeholder="To" class="border p-2">
                 <input type="date" placeholder="Date" class="border p-2">
-                <input type="number" placeholder="Number of Passengers" class="border p-2">
                 <button type="submit" class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Search</button>
             </form>
         </div>
-
-        <!-- Right Section - Image -->
         <div class="hidden md:block w-1/2">
             <img src="https://media.istockphoto.com/id/1134018636/photo/handsome-smiling-young-man-getting-into-bus.jpg?s=612x612&w=0&k=20&c=sViHTT89eDEc0aU7h-1sV7qT8RqT7XlqtgFFBoFpo4k=" alt="Bus Image" class="w-full h-full object-cover rounded-lg">
         </div>
@@ -29,49 +26,48 @@
     </div>
 
        @php
-            // Manually declare an array of available tickets for testing
             $availableTickets = [
                 [
                     'travel_agency' => [
-                        'name' => 'Amazing Travels',
+                        'name' => 'Ritco express',
                         'image' => 'https://www.jobinrwanda.com/sites/default/files/styles/medium/public/employer_logos/xlogo_2130242003.png,qitok=a11ZtBb6.pagespeed.ic.wCryn_YzzN.jpg', // Placeholder image URL
                     ],
-                    'seat' => 'A1',
-                    'direction' => ['origin' => 'Kigali', 'destination' => 'Gisenyi', 'price' => '50,000 RWF'],
+                    'seat' => '32',
+                    'direction' => ['origin' => 'Kigali', 'destination' => 'Gisenyi', 'price' => '5000 RWF'],
                     'time' => '2024-01-24 08:00:00',
                 ],
                 [
                     'travel_agency' => [
-                        'name' => 'Serene Tours',
-                        'image' => 'https://www.jobinrwanda.com/sites/default/files/styles/medium/public/employer_logos/xlogo_2130242003.png,qitok=a11ZtBb6.pagespeed.ic.wCryn_YzzN.jpg', // Placeholder image URL
+                        'name' => 'Horizon express ',
+                        'image' => 'https://safaribay.net/wp-content/uploads/2018/09/Horizon-Express-Bus-Rwanda.jpg', // Placeholder image URL
                     ],
-                    'seat' => 'B3',
-                    'direction' => ['origin' => 'Kigali', 'destination' => 'Musanze', 'price' => '40,000 RWF'],
+                    'seat' => '32',
+                    'direction' => ['origin' => 'Kigali', 'destination' => 'Musanze', 'price' => '4000 RWF'],
                     'time' => '2024-01-25 10:30:00',
                 ],
                      [
                     'travel_agency' => [
-                        'name' => 'Serene Tours',
+                        'name' => 'Ritco express',
                         'image' => 'https://www.jobinrwanda.com/sites/default/files/styles/medium/public/employer_logos/xlogo_2130242003.png,qitok=a11ZtBb6.pagespeed.ic.wCryn_YzzN.jpg', // Placeholder image URL
                     ],
-                    'seat' => 'B3',
-                    'direction' => ['origin' => 'Kigali', 'destination' => 'Musanze', 'price' => '40,000 RWF'],
+                    'seat' => '32',
+                    'direction' => ['origin' => 'Kigali', 'destination' => 'Musanze', 'price' => '4000 RWF'],
                     'time' => '2024-01-25 10:30:00',
                 ],     [
                     'travel_agency' => [
-                        'name' => 'Serene Tours',
-                        'image' => 'https://www.jobinrwanda.com/sites/default/files/styles/medium/public/employer_logos/xlogo_2130242003.png,qitok=a11ZtBb6.pagespeed.ic.wCryn_YzzN.jpg', // Placeholder image URL
+                        'name' => 'Volcano express',
+                        'image' => 'https://safaribay.net/wp-content/uploads/2018/09/volcano-express.jpg', // Placeholder image URL
                     ],
-                    'seat' => 'B3',
-                    'direction' => ['origin' => 'Kigali', 'destination' => 'Musanze', 'price' => '40,000 RWF'],
+                    'seat' => '32',
+                    'direction' => ['origin' => 'Kigali', 'destination' => 'Musanze', 'price' => '4000 RWF'],
                     'time' => '2024-01-25 10:30:00',
                 ],     [
                     'travel_agency' => [
-                        'name' => 'Serene Tours',
-                        'image' => 'https://www.jobinrwanda.com/sites/default/files/styles/medium/public/employer_logos/xlogo_2130242003.png,qitok=a11ZtBb6.pagespeed.ic.wCryn_YzzN.jpg', // Placeholder image URL
+                        'name' => 'Ritco express',
+                        'image' => 'https://safaribay.net/wp-content/uploads/2018/09/Horizon-Express-Bus-Rwanda.jpg', // Placeholder image URL
                     ],
-                    'seat' => 'B3',
-                    'direction' => ['origin' => 'Kigali', 'destination' => 'Musanze', 'price' => '40,000 RWF'],
+                    'seat' => '32',
+                    'direction' => ['origin' => 'Kigali', 'destination' => 'Musanze', 'price' => '4000 RWF'],
                     'time' => '2024-01-25 10:30:00',
                 ],
             ];

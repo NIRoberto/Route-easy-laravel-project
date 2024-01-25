@@ -4,7 +4,6 @@
 
 @section('content')
        @php
-            // Manually declare an array of available tickets for testing
             $availableTickets = [
                 [
                     'travel_agency' => [
@@ -79,11 +78,8 @@
             </div>
         </form>
     </div>
-
     <!-- Travel Cards Section -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-8">
-
-     
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-8">     
             @foreach ($availableTickets as $ticket)
                 <div class="bg-white shadow-md rounded-md p-4">
                     <div class="mb-4">

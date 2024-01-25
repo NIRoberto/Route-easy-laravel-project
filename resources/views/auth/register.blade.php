@@ -13,11 +13,26 @@
 
         <!-- Login Form -->
         <form class="flex flex-col space-y-4">
-            <input type="text" placeholder="Email" class="border p-2">
+
+        <label class="text-gray-800">Names</label>
+            <input type="text" placeholder="Full names" class="border p-2">
+               <label class="text-gray-800">Email</label>
             <input type="Email" placeholder="email" class="border p-2">
+               <label class="text-gray-800">Password</label>
             <input type="password" placeholder="Password" class="border p-2">
             <button type="submit" class="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline">Register</button>
         </form>
+
+        <p
+          class="mt-8"
+        >
+            Already have an account?
+
+            <a href="/login" class="text-orange-600">
+             Login
+            </a>
+        </p>
+        
     </div>
 
     <!-- Right Section - Orange Background with Text -->

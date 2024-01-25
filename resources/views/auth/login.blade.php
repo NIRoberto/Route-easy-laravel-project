@@ -12,10 +12,25 @@
 
         <!-- Login Form -->
         <form class="flex flex-col space-y-4">
+            <label class="text-gray-800"> Email</label>
             <input type="text" placeholder="Email" class="border p-2">
+
+                  <label class="text-gray-800">
+                    Password
+            </label>
             <input type="password" placeholder="Password" class="border p-2">
             <button type="submit" class="bg-orange-500 hover:bg-orange-700 text-white  py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
         </form>
+
+        <p
+          class="mt-8"
+        >
+            Don't have an account create here
+
+            <a href="/register" class="text-orange-600">
+             Register
+            </a>
+        </p>
     </div>
     <!-- Right Section - Orange Background with Text -->
     <div class="hidden md:block w-1/2 h-screen bg-orange-500 p-8 text-white">
@@ -23,7 +38,6 @@
          <a href="/register">
          Register
         </a>
-
         </h2>
         <p class="text-lg">Join our community and explore amazing features!</p>
     </div>
